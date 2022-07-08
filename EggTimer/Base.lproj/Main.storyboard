@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -120,6 +121,21 @@
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yv5-X8-sAI" userLabel="Timer View">
                                         <rect key="frame" x="0.0" y="571.33333333333337" width="374" height="246.66666666666663"/>
+                                        <subviews>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="w8I-9o-XRX">
+                                                <rect key="frame" x="0.0" y="121" width="374" height="6"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="5" id="KjZ-uO-b8z"/>
+                                                </constraints>
+                                                <color key="progressTintColor" systemColor="systemYellowColor"/>
+                                                <color key="trackTintColor" red="0.42745098469999998" green="0.42352938649999999" blue="0.42745098469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </progressView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="w8I-9o-XRX" firstAttribute="leading" secondItem="yv5-X8-sAI" secondAttribute="leading" id="PPI-AB-6Lm"/>
+                                            <constraint firstAttribute="trailing" secondItem="w8I-9o-XRX" secondAttribute="trailing" id="QQ4-in-PC7"/>
+                                            <constraint firstItem="w8I-9o-XRX" firstAttribute="centerY" secondItem="yv5-X8-sAI" secondAttribute="centerY" id="lmu-7g-X7Q"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -133,6 +149,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="jbf-c9-dUg" secondAttribute="trailing" id="t5Q-j2-ssS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="progressBar" destination="w8I-9o-XRX" id="H43-fS-10R"/>
+                        <outlet property="titleLabel" destination="Q4g-sx-aQg" id="mxW-i0-gOT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uv6-6i-0AU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -143,5 +163,8 @@
         <image name="hard_egg" width="287.66665649414062" height="366.33334350585938"/>
         <image name="medium_egg" width="288" height="363.33334350585938"/>
         <image name="soft_egg" width="287" height="365.33334350585938"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
