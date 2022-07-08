@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D4724EDE2878A38700867A4B /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D4724EDD2878A38600867A4B /* alarm_sound.mp3 */; };
 		D4769A2928776A24003794FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4769A2828776A24003794FF /* AppDelegate.swift */; };
 		D4769A2B28776A24003794FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4769A2A28776A24003794FF /* SceneDelegate.swift */; };
 		D4769A2D28776A24003794FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4769A2C28776A24003794FF /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D4724EDD2878A38600867A4B /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
 		D4769A2528776A24003794FF /* EggTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EggTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4769A2828776A24003794FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4769A2A28776A24003794FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				D4769A2A28776A24003794FF /* SceneDelegate.swift */,
 				D4769A2C28776A24003794FF /* ViewController.swift */,
 				D4769A2E28776A24003794FF /* Main.storyboard */,
+				D4724EDD2878A38600867A4B /* alarm_sound.mp3 */,
 				D4769A3128776A26003794FF /* Assets.xcassets */,
 				D4769A3328776A26003794FF /* LaunchScreen.storyboard */,
 				D4769A3628776A26003794FF /* Info.plist */,
@@ -127,6 +130,7 @@
 			files = (
 				D4769A3528776A26003794FF /* LaunchScreen.storyboard in Resources */,
 				D4769A3228776A26003794FF /* Assets.xcassets in Resources */,
+				D4724EDE2878A38700867A4B /* alarm_sound.mp3 in Resources */,
 				D4769A3028776A24003794FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
