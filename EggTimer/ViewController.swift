@@ -18,7 +18,6 @@ class ViewController: UIViewController {
     var totalTime = 0
     var secondsPassed = 0
     
-    
     @IBAction func hardnessSelected(_ sender: UIButton) {
         timer.invalidate()
         let hardness = sender.currentTitle!
